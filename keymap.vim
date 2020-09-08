@@ -92,20 +92,26 @@ nnoremap <silent><localleader>sl :SLoad<cr>
 nnoremap <silent><localleader>sd :SDelete<cr>
 nnoremap <silent><localleader>sc :SClose<cr>
 
-nnoremap   <silent><localleader>tn   :FloatermNew<CR>
-tnoremap   <silent><localleader>tn   <C-\><C-n>:FloatermNew<CR>
-nnoremap   <silent><localleader>tk   :FloatermPrev<CR>
-tnoremap   <silent><localleader>tk   <C-\><C-n>:FloatermPrev<CR>
-nnoremap   <silent><localleader>tj   :FloatermNext<CR>
-tnoremap   <silent><localleader>tj   <C-\><C-n>:FloatermNext<CR>
-nnoremap   <silent><localleader>ts   :FloatermShow<CR>
-tnoremap   <silent><localleader>ts   <C-\><C-n>:FloatermShow<CR>
-nnoremap   <silent><localleader>th   :FloatermHide<CR>
-tnoremap   <silent><localleader>th   <C-\><C-n>:FloatermHide<CR>
-nnoremap   <silent><localleader>tq   :FloatermKill<CR>
-tnoremap   <silent><localleader>tq   <C-\><C-n>:FloatermKill<CR>
-nnoremap   <silent><localleader>tm   :FloatermSend<CR>
-tnoremap   <silent><localleader>tm   <C-\><C-n>:FloatermSend<CR>
+nnoremap   <silent><leader>ot   :FloatermNew<CR>
+tnoremap   <silent><leader>ot   <C-\><C-n>:FloatermNew<CR>
+nnoremap   <silent><leader>tt   :FloatermToggle<CR>
+tnoremap   <silent><leader>tt   <C-\><C-n>:FloatermToggle<CR>
+nnoremap   <silent><leader>tp   :FloatermPrev<CR>
+tnoremap   <silent><leader>tp   <C-\><C-n>:FloatermPrev<CR>
+nnoremap   <silent><leader>tn   :FloatermNext<CR>
+tnoremap   <silent><leader>tn   <C-\><C-n>:FloatermNext<CR>
+nnoremap   <silent><leader>ts   :FloatermShow<CR>
+tnoremap   <silent><leader>ts   <C-\><C-n>:FloatermShow<CR>
+nnoremap   <silent><leader>th   :FloatermHide<CR>
+tnoremap   <silent><leader>th   <C-\><C-n>:FloatermHide<CR>
+nnoremap   <silent><leader>ta   :FloatermFirst<CR>
+tnoremap   <silent><leader>ta   <C-\><C-n>:FloatermFirst<CR>
+nnoremap   <silent><leader>te   :FloatermLast<CR>
+tnoremap   <silent><leader>te   <C-\><C-n>:FloatermLast<CR>
+nnoremap   <silent><leader>tk   :FloatermKill<CR>
+tnoremap   <silent><leader>tk   <C-\><C-n>:FloatermKill<CR>
+nnoremap   <silent><leader>tm   :FloatermSend<CR>
+tnoremap   <silent><leader>tm   <C-\><C-n>:FloatermSend<CR>
 
 " easymotion
 map  <leader>jf <Plug>(easymotion-bd-f)
@@ -205,4 +211,4 @@ cnoremap <C-t> <C-R>=expand("%:p:h") . "/" <CR>
 " vim-youdao-translater
 vnoremap <silent> <C-T> :<C-u>Ydv<CR>
 nnoremap <silent> <C-T> :<C-u>Ydc<CR>
-noremap <leader>yd :<C-u>Yde<CR>
+nnoremap <leader>yd :<C-u>Yde<CR>
