@@ -38,8 +38,7 @@ Plug 'prabirshrestha/asyncomplete-lsp.vim'
 Plug 'maralla/completor.vim'
 
 " 卸载/禁用~/.vimrc里的默认插件
-" UnPlug 'chxuan/prepare-code'
-
+UnPlug 'chxuan/prepare-code'
 UnPlug 'Yggdroot/LeaderF'
 UnPlug 'chxuan/tagbar'
 UnPlug 'mileszs/ack.vim'

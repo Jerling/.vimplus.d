@@ -25,15 +25,17 @@ nnoremap <silent><leader>sr :<C-u>Clap grep<CR>
 nnoremap <silent><leader>sf :<C-u>Clap files ++finder=rg --no-ignore --hidden --files<cr>
 nnoremap <silent><leader>sg :<C-u>Clap gfiles<CR>
 nnoremap <silent><leader>ss :<C-u>Clap grep2 ++query=<cr>
+nnoremap <silent><leader>sd :<C-u>Clap grep2 ++query=<cword><cr>
 nnoremap <silent><leader>sa :<C-u>Clap grep ++query=<cword><cr>
 nnoremap <silent><leader>fr :<C-u>Clap history<CR>
 nnoremap <silent><leader>sw :<C-u>Clap windows<CR>
 nnoremap <silent><leader>sl :<C-u>Clap loclist<CR>
 nnoremap <silent><leader>su :<C-u>Clap git_diff_files<CR>
 nnoremap <silent><leader>sc :<C-u>Clap command_history<CR>
-nnoremap <silent><leader>so :<C-u>Clap command_history<CR>
+nnoremap <silent><leader>sp :<C-u>Clap providers<CR>
+nnoremap <silent><leader>sy :<C-u>Clap yanks<CR>
+nnoremap <silent><leader>mm :<c-u>Clap marks<cr>
 nnoremap <silent><leader>c :Clap command<cr>
-nnoremap <silent><leader>mm :Clap marks<cr>
 
 " Buffer
 nnoremap <silent><leader>bd :bd<cr>
@@ -212,3 +214,6 @@ cnoremap <C-t> <C-R>=expand("%:p:h") . "/" <CR>
 vnoremap <silent> <C-T> :<C-u>Ydv<CR>
 nnoremap <silent> <C-T> :<C-u>Ydc<CR>
 nnoremap <leader>yd :<C-u>Yde<CR>
+
+" AsyncTask
+nnoremap <leader>sk :AsyncTask 
